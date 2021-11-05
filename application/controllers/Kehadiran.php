@@ -40,8 +40,7 @@ class Kehadiran extends CI_Controller {
         $this->kehadiran->updateAbsensi($id, $data);
         $this->session->set_flashdata('message', 'Absensi berhasil ditolak.');
 
-        redirect(base_url('kehadi
-        ran/konfirmasi_kehadiran'));
+        redirect(base_url('kehadiran/konfirmasi_kehadiran'));
     }
 
     public function tabel_kehadiran() {

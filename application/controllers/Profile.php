@@ -27,6 +27,7 @@ class Profile extends CI_Controller {
 
 	public function edit()
 	{
+		$id = $this->session->userdata('id');
 		$this->form_validation->set_rules('no_employee', 'No Karyawan', 'required|trim',[
 			'required' => 'No karyawan tidak boleh kosong.'
 		]);
@@ -53,13 +54,13 @@ class Profile extends CI_Controller {
 			$this->session->set_flashdata('message', 'Data anggota berhasil ditambahkan.');
 
 			if($data['position_id'] == 1){
-				redirect(base_url('anggota/dokter'));
+				redirect(base_url('anggota/dosen'));
 			}else if($data['position_id'] == 2){
-				redirect(base_url('anggota/perawat'));
+				redirect(base_url('anggota/tatausaha'));
 			}else if($data['position_id'] == 3){
-				redirect(base_url('anggota/apoteker'));
+				redirect(base_url('anggota/staff'));
 			}else if($data['position_id'] == 4){
-				redirect(base_url('anggota/akuntan'));
+				redirect(base_url('anggota/laboran'));
 			}
 		}
 	}
