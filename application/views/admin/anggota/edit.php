@@ -1,10 +1,10 @@
-<h2 class="mb-4">Edit Anggota</h2>
+<h2 class="mb-4">Edit Pegawai</h2>
 
 <form action="<?= base_url('anggota/edit/' . $user['id_users'] ) ?>" method="POST">
 	<input type="hidden" name="id" value="<?= $user['id_users'] ?>">
 
 	<div class="form-group row">
-		<label for="no_employee" class="col-sm-2 col-form-label">No Karyawan</label>
+		<label for="no_employee" class="col-sm-2 col-form-label">No Pegawai</label>
 		<div class="col-sm-6">
 			<input type="text" class="form-control" name="no_employee" id="no_employee" value="<?= $user['no_employee'] ?>">
 			<?= form_error('no_employee', '<small class="text-danger mt-1">', '</small>'); ?>

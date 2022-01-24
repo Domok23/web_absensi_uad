@@ -13,7 +13,7 @@
 	<thead>
 		<tr>
 			<th scope="col">#</th>
-			<th scope="col">No Karyawan</th>
+			<th scope="col">No Pegawai</th>
 			<th scope="col">Foto</th>
 			<th scope="col">Nama</th>
 			<th>Aksi</th>

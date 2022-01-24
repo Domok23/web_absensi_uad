@@ -1,11 +1,11 @@
-<h2 class="mb-4">Tambah Anggota</h2>
+<h2 class="mb-4">Tambah Pegawai</h2>
 
 <form action="<?= base_url('anggota/add') ?>" method="post">
 	<div class="form-group row">
-		<label for="no_employee" class="col-sm-2 col-form-label">No Karyawan</label>
+		<label for="no_employee" class="col-sm-2 col-form-label">No Pegawai</label>
 		<div class="col-sm-6">
 			<input type="text" class="form-control" name="no_employee" id="no_employee" >
-			<small>No karyawan harus 18 digit.</small>
+			<small>No Pegawai harus 18 digit.</small>
 			<?= form_error('no_employee', '<small class="text-danger mt-1">', '</small>'); ?>
 		</div>
 	</div>

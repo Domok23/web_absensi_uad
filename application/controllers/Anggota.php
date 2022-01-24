@@ -55,6 +55,9 @@ class Anggota extends CI_Controller {
             'valid_email' => 'Email tidak valid',
             'is_unique'   => 'Email sudah terdaftar.',
         ]);
+		$this->form_validation->set_rules('password', 'Password', 'required',[
+			'required'		=> 'Password tidak boleh kosong'
+		]);
 
         if ($this->form_validation->run() == FALSE) {
             $data['title']    = 'Tambah Anggota';
